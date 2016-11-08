@@ -44,7 +44,7 @@ class LeadInSnippet
             'leadin_id' => $this->config->getLeadinId()
         ];
 
-        return $this->view->render("tag.twig", $data);
+        return $this->view->render("leadin.twig", $data);
     }
 }
 

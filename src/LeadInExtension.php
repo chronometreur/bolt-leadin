@@ -41,21 +41,6 @@ class LeadInExtension extends SimpleExtension
 
     /**
      * @return array
-     * If backend is set to false, don't load the menu link.
-     */
-    protected function registerMenuEntries()
-    {
-        $menu = (new MenuEntry('hubspot', '/bolt/extensions/leadin'))
-            ->setLabel(Trans::__('Statistics'))
-            ->setIcon('fa:area-chart');
-
-        return [
-            $menu
-        ];
-    }
-
-    /**
-     * @return array
      */
     protected function registerAssets()
     {
